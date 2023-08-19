@@ -1,4 +1,4 @@
-# diaspora-admin
+# social-service
 
 ## Project setup
 ```
