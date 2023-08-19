@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Dashboard</h1>
+        <h1>Dashboard Page</h1>
         <p>Welcome, {{ currentUser }}</p>
 
         <AutoComplete v-model="value" :suggestions="items" @complete="search" />
