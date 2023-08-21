@@ -1,4 +1,5 @@
 import Login from '../components/Login.vue';
+import Signup from '../components/Signup.vue';
 import Dashboard from "../components/Dashboard.vue";
 import ErrorPage from '../components/ErrorPage.vue'
 
@@ -7,6 +8,11 @@ const routes = [
         path: '/',
         name: 'LoginPage',
         component: Login,
+    },
+    {
+        path: '/signup',
+        name: 'SignupPage',
+        component: Signup,
     },
     {
         path: '/dashboard',
@@ -19,18 +25,6 @@ const routes = [
         name: 'about',
         component: Dashboard,
         meta: { requiresAuth: true }, // Secure the dashboard route
-    },
-    {
-        path: '/service',
-        name: 'service',
-        component: Dashboard,
-        meta: { requiresAuth: true }, // Secure the dashboard route
-    },
-    {
-        path: '/contact',
-        name: 'contact',
-        component: Dashboard,
-        meta: { requiresAuth: false }, // Secure the dashboard route
     },
     {
         path: '/:catchAll(.*)',
